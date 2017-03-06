@@ -2,27 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>RecoMedia</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
     <link href="Login.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
   </head>
 
   <body>
-    <h1 class="header1"><span id="sreco">Reco</span>Media</h1>
+      <form class="form-signin" method="post" class="menulayout">
+            <span id="srecomedia" onclick="fbackhome()"><span id="sreco">Reco</span>Media</span>
+            <input class="menubutton"  style="margin-left:250px" name="btnDocument" id="btnDocument" type="button" value="DOCUMENT"  float="left"/>
+            <input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="MODERATOR" onclick="flogin()"/>
+	        <input class="menubutton" name="btnWebviewer" id="btnWebviewer" type="button" value="WEBVIEWER" />
+            <input class="menubutton" style="margin-left:-15px" name="btnSystem" id="btnSystem" type="button" value="SYSTEM" />
+	        <input class="downloadbutton" name="btnDownload" id="btnDownload" type="button" value="DOWNLOAD"/>
+        </form>
     <div class="container">
-
-      <form class="form-signin">
-        <h2 id="status" class="form-signin-heading"></h2>
+      <form class="form-signin1">
+        <h2 id="status" class="form-signin1-heading"></h2>
         <input type="text" class="form-control" placeholder="ID" required autofocus>
         <input type="password" class="form-control" placeholder="Password" required>
           
@@ -41,5 +42,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        function fbackhome(){
+            location.href="main.html";
+        }
+    </script>
   </body>
 </html>
