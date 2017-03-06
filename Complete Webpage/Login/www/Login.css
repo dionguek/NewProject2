@@ -2,18 +2,23 @@
 font-family:Cambria;
 text-align:center;
 font-size:72px;
+color:white;
 }
 #sreco{
 color:rgb(255,158,0);
 }
-    
+
+#sbutton{
+background-color:rgb(255,158,0);
+color:white;
+}    
 body {
       
 padding-top: 40px;
 
 padding-bottom: 40px;
       
-background-color: #eee;
+background-color: black;
     
 }
     
@@ -84,4 +89,7 @@ border-top-left-radius: 0;
       
 border-top-right-radius: 0;
     
+}
+.form-signin-heading{
+color:white;
 }
