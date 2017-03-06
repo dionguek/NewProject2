@@ -1,5 +1,5 @@
 body{
-background-color:rgb(200,200,200);
+background-color:rgb(100,100,100);
 }
 #sreco{
 color:rgb(255,158,0);
@@ -17,12 +17,15 @@ color:black;
 }
 #sshortdescription{
 color:white;
-font-size:28px;
-text-align:center;
+font-size:48px;
+text-align:left;
+max-width:400px;
+padding-left:100px;
+}
+#srecomedia{
+	width:50px;
 }
 .form-signin {
-max-width: 1000px;
-      
 padding: 30px;
       
 margin: 0 auto;
@@ -35,16 +38,45 @@ padding: 30px;
 margin: 0 auto;
 }
 .menubutton{
-	background-color:rgb(255,158,0);
+	background-color:rgb(100,100,100);
 	color:White;
-	border-color:Black;
-	width:300px;
-	height:120px;
-	margin-left:10px;
-	font-size:48px;
-	font-family:Constantia;
+	border-color:rgb(100,100,100);
+	width:170px;
+	height:100px;
+	margin-left:-1px;
+	font-size:28px;
+	font-family:Calibri;
+	font-weight:bold;
+	border:none;
 }
 .menubutton:hover{
-	background-color:rgb(215,118,0);
-	color:rgb(210,210,210);
+	text-decoration:underline;
 }
+.downloadbutton{
+	background-color:rgb(100,100,100);
+	color:White;
+	border:solid 2px white;
+	border-radius:18px;
+	width:170px;
+	height:100px;
+	margin-left:-1px;
+	font-size:28px;
+	font-family:Calibri;
+	font-weight:bold;
+}
+.downloadbutton:hover{
+	color:black;
+	border-color:black;
+}
+.menubutton:focus,
+.downloadbutton:focus{
+	outline:none;
+}
+q{
+	color:white;
+	font-size:36px;
+	font-family:verdana;
+	font-style:italic;
+}
+	
+	
