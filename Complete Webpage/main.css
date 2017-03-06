@@ -1,5 +1,5 @@
 body{
-background-color:black;
+background-color:rgb(200,200,200);
 }
 #sreco{
 color:rgb(255,158,0);
@@ -7,8 +7,9 @@ color:rgb(255,158,0);
 
 #srecomedia{
 font-family:Cambria;
-text-align:center;
-font-size:72px;
+text-align:left;
+font-size:60px;
+margin-left:20px;
 color:White;
 }
 .sheaderline{
@@ -42,4 +43,8 @@ margin: 0 auto;
 	margin-left:10px;
 	font-size:48px;
 	font-family:Constantia;
+}
+.menubutton:hover{
+	background-color:rgb(215,118,0);
+	color:rgb(210,210,210);
 }
