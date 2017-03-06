@@ -29,7 +29,7 @@
         <form class="form-signin" method="post" class="menulayout">
             <span id="srecomedia"><span id="sreco">Reco</span>Media</span>
             <input class="menubutton"  style="margin-left:250px" name="btnDocument" id="btnDocument" type="button" value="DOCUMENT"  float="left"/>
-            <a href="Login.html"><input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="MODERATOR" /></a>
+            <input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="MODERATOR" onclick="flogin()"/>
 	        <input class="menubutton" name="btnWebviewer" id="btnWebviewer" type="button" value="WEBVIEWER" />
             <input class="menubutton" style="margin-left:-15px" name="btnSystem" id="btnSystem" type="button" value="SYSTEM" />
 	        <input class="downloadbutton" name="btnDownload" id="btnDownload" type="button" value="DOWNLOAD"/>
@@ -38,7 +38,9 @@
         <p id="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
         
         <script>
-            
+            function flogin() {
+               location.href="Login.html";
+            }
         </script>
     </body>
 
