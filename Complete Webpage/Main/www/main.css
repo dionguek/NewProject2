@@ -33,17 +33,7 @@ padding: 30px;
       
 margin: 0 auto;
 }
-.form-signin .menubutton{
-	background-color:rgb(255,158,0);
-	color:White;
-	border-color:Black;
-	width:300px;
-	height:120px;
-	margin-left:10px;
-	font-size:48px;
-	font-family:Constantia;
-}
-.form-signin2 .menubutton{
+.menubutton{
 	background-color:rgb(255,158,0);
 	color:White;
 	border-color:Black;
