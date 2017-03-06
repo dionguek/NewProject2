@@ -6,13 +6,21 @@
       "projectTypeName": "com.intel.xdk.projecttype.webapp",
       "src": "webapp/template-blank-ad-project/sample.zip",
       "projectGuid": "f776546e-2ed9-4bbd-af84-e4a682ee130a",
-      "lastModifiedDate": 1488770908112,
+      "lastModifiedDate": 1488772193176,
       "creationDate": 1488770907830
     },
     "XDK-app-designer": "true",
     "sourceDirectory": "www",
     "startFile": "index.html",
-    "projectFiles": {},
+    "projectFiles": {
+      "xdk-publish-meta-data.json": {
+        "settings": {
+          "project": {
+            "XDK-not-deployed": "True"
+          }
+        }
+      }
+    },
     "projectDirectories": {},
     "libraries": [],
     "serviceMethods": [],
@@ -32,10 +40,11 @@
         "appName_": "Main",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [],
           "intents": [],
-          "navigation": []
+          "navigation": [],
+          "properties": {}
         },
         "icons_": [],
         "splashes_": [],
@@ -61,10 +70,11 @@
         "appName_": "Main",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [],
           "intents": [],
-          "navigation": []
+          "navigation": [],
+          "properties": {}
         },
         "icons_": [],
         "splashes_": [],

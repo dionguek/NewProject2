@@ -34,6 +34,7 @@
                 /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
         </style>
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
         <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
         <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
         <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
@@ -64,9 +65,20 @@
         <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
         <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
         <div class="text-container">
-            <h1 id="srecomedia"><span id="sreco">Reco</span>Media</h1><hr class="sheaderline">
+            <h1 id="srecomedia"><span id="sreco">Reco</span>Media</h1>
+            <hr class="sheaderline">
         </div>
-        <p id="sshortdescription">A simple wireless multi-platform screen sharing application.</p><hr class="sheaderline">
+        <p id="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
+        <hr class="sheaderline">
+        <form class="form-signin" method="post" class="menulayout">
+	        <input class="menubutton" name="btnDownload" id="btnDownload" type="button" value="Download" />
+            <input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="Moderator" />
+            <input class="menubutton" name="btnDocument" id="btnDocument" type="button" value="Document" />
+        </form>
+        <form class="form-signin2" method="post" class="menulayout">
+	        <input class="menubutton" name="btnWebviewer" id="btnWebviewer" type="button" value="Webviewer" />
+            <input class="menubutton" name="btnSystem" id="btnSystem" type="button" value="System" />
+        </form>
     </body>
 
 </html>
