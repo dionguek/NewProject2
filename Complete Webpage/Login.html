@@ -24,15 +24,15 @@
 
   <body>
       <form class="form-signin" method="post" class="menulayout">
-            <img src="picture/recomedia-logo.png" alt="Recomedia" style="width:400px;height:60px;">
+            <img src="picture/recomedia-logo.png" alt="Recomedia" style="width:400px;height:60px;" onclick="fbackhome()">
             <input class="menubutton" name="btnblank" id="btnblank" type="button" value=" " float="left"/>
             <input class="menubutton" name="btnDocument" id="btnDocument" type="button" value="DOCUMENT"/>
             <input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="MODERATOR" onclick="flogin()"/>
 	        <input class="menubutton" name="btnWebviewer" id="btnWebviewer" type="button" value="WEBVIEWER" />
-            <input class="menubutton" style="margin-left:-15px" name="btnSystem" id="btnSystem" type="button" value="SYSTEM" />
+            <input class="menubutton" name="btnSystem" id="btnSystem" type="button" value="SYSTEM" />
 	        <input class="downloadbutton" name="btnDownload" id="btnDownload" type="button" value="DOWNLOAD"/>
         </form>
-    <div class="container">
+    <div class="form-signin2">
       <form class="form-signin1">
         <h2 id="status" class="form-signin1-heading"></h2>
         <input type="text" class="form-control" placeholder="ID" required autofocus>

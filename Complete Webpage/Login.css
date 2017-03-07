@@ -1,24 +1,6 @@
 body{
 background-color:rgb(171,204,237);
 }
-#sreco{
-color:rgb(255,158,0);
-}
-
-#srecomedia{
-font-family:Cambria;
-text-align:left;
-font-size:60px;
-margin-left:20px;
-color:White;
-}
-#sshortdescription{
-color:white;
-font-size:48px;
-text-align:left;
-max-width:400px;
-padding-left:100px;
-}
 #sbutton{
 	padding: 10px;
 	color:white;
@@ -27,18 +9,27 @@ padding-left:100px;
 	border-radius: 5px;
 }
 .form-signin {
+height:80px;
 padding: 30px;
+margin: 0;
 margin: 0 auto;
+top:0;
+left:0;
+right:0;
+position:absolute;
+background-color:white;
 }
 .form-signin2 {
-max-width: 700px;
+position:absolute;
+top:150px;
+right:0px;
+left:0px;
 padding: 30px;  
-margin: 0 auto;
+margin: 0;
 }
 .menubutton{
-	background-color:rgb(171,204,237);
-	color:White;
-	border-color:rgb(171,204,237);
+	background-color:white;
+	color:rgb(171,204,237);
 	width:170px;
 	height:100px;
 	margin-left:-1px;
@@ -67,8 +58,12 @@ margin: 0 auto;
 	border-color:black;
 }
 .menubutton:focus,
+.form-control:focus,
 .downloadbutton:focus{
 	outline:none;
+}
+#btnblank:hover{
+	text-decoration:none;
 }
 q{
 	color:white;
@@ -79,7 +74,7 @@ q{
 	
 	
 .form-signin1 {
-      
+
 max-width: 330px;
       
 padding: 15px;

@@ -27,8 +27,7 @@
 
     <body>
         <form class="form-signin" method="post" class="menulayout">
-            <!--<span id="srecomedia" onclick="fbackhome()"><span id="sreco">Reco</span>Media</span>-->
-            <img src="picture/recomedia-logo.png" alt="Recomedia" style="width:400px;height:60px;">
+            <img src="picture/recomedia-logo.png" alt="Recomedia" style="width:400px;height:60px;" onclick="fbackhome()">
             <input class="menubutton" name="btnblank" id="btnblank" type="button" value=" " float="left"/>
             <input class="menubutton" name="btnDocument" id="btnDocument" type="button" value="DOCUMENT"/>
             <input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="MODERATOR" onclick="flogin()"/>
@@ -36,9 +35,10 @@
             <input class="menubutton" name="btnSystem" id="btnSystem" type="button" value="SYSTEM" />
 	        <input class="downloadbutton" name="btnDownload" id="btnDownload" type="button" value="DOWNLOAD"/>
         </form>
-        <p class="sshortdescription">Screen sharing has never been easier! </p><br><br>
-        <p class="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
-        
+        <form class="form-signin2" method="post" class="menulayout">
+            <p class="sshortdescription">Screen sharing has never been easier! </p><br><br>
+            <p class="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
+        </form>
         <script>
             function flogin() {
                location.href="Login.html";
