@@ -27,8 +27,7 @@
 
     <body>
         <form class="form-signin" method="post" class="menulayout">
-            <img src="picture/recomedia-logo.png" alt="Recomedia" style="width:400px;height:60px;" onclick="fbackhome()">
-            <input class="menubutton" name="btnblank" id="btnblank" type="button" value=" " float="left"/>
+            <img id="logo" src="picture/recomedia-logo.png" alt="Recomedia" onclick="fbackhome()">
             <input class="menubutton" name="btnDocument" id="btnDocument" type="button" value="DOCUMENT"/>
             <input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="MODERATOR" onclick="flogin()"/>
 	        <input class="menubutton" name="btnWebviewer" id="btnWebviewer" type="button" value="WEBVIEWER" />
@@ -36,9 +35,17 @@
 	        <input class="downloadbutton" name="btnDownload" id="btnDownload" type="button" value="DOWNLOAD"/>
         </form>
         <form class="form-signin2" method="post" class="menulayout">
-            <p class="sshortdescription">Screen sharing has never been easier! </p><br><br>
+            <p class="sshortdescription">Screen sharing has never been easier! </p>
             <p class="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
         </form>
+        <form class="form-signin3" method="post" class="menulayout">
+            <img id="step1" class="steps" src="Picture/Step1.jpg" alt="Step 1">
+            <img id="step2" class="steps" src="Picture/Step2.jpg" alt="Step 1">
+            <img id="step3" class="steps" src="Picture/Step3.jpg" alt="Step 1">
+        </form>
+            <span id="step1txt" class="steptext">Step 1 Download</span>
+            <span id="step2txt" class="steptext">Step 2 Connect</span>
+            <span id="step3txt" class="steptext">Step 3 Manage</span>
         <script>
             function flogin() {
                location.href="Login.html";

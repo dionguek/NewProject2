@@ -37,10 +37,17 @@ margin: 0;
 	font-family:Calibri;
 	font-weight:bold;
 	border:none;
+    position:absolute;
+    top:20px;
 }
 .menubutton:hover{
 	text-decoration:underline;
 }
+#btnDocument{left:600px;}
+#btnModerator{left:780px;}
+#btnWebviewer{left:960px;}
+#btnSystem{left:1120px;}
+#btnDownload{left:1300px;}
 .downloadbutton{
 	background-color:rgb(171,204,237);
 	color:White;
@@ -52,6 +59,8 @@ margin: 0;
 	font-size:28px;
 	font-family:Calibri;
 	font-weight:bold;
+    position:absolute;
+    top:20px;
 }
 .downloadbutton:hover{
 	color:black;
@@ -61,9 +70,6 @@ margin: 0;
 .form-control:focus,
 .downloadbutton:focus{
 	outline:none;
-}
-#btnblank:hover{
-	text-decoration:none;
 }
 q{
 	color:white;

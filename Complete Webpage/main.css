@@ -1,5 +1,9 @@
 body{
-background-color:rgb(100,100,100);
+background-color:rgb(66,66,66);
+}
+#logo{
+    width:400px;
+    height:60px;
 }
 .sshortdescription{
 color:white;
@@ -16,20 +20,34 @@ background-color:white;
 top:0;
 left:0;
 right:0;
+width:1475px;
 position:absolute;
 }
 .form-signin2 {
 position:absolute;
-top:100px;
+top:140px;
 right:0px;
 left:0px;
 max-width: 400px;
 padding: 30px;  
 margin: 0;
 }
+.form-signin3{
+    top:140px;
+    left:450px;
+    width:1000px;
+    height:320px;
+    padding-top:50px;
+    position:relative;
+}
+.steps{
+    width:300px;
+    height:300px;
+    margin:15px;
+}
 .menubutton{
 	background-color:white;
-	color:rgb(100,100,100);
+	color:rgb(66,66,66);
 	border-color:white;
 	width:170px;
 	height:100px;
@@ -38,15 +56,19 @@ margin: 0;
 	font-family:Calibri;
 	font-weight:bold;
 	border:none;
+    position:absolute;
+    top:20px;
 }
 .menubutton:hover{
 	text-decoration:underline;
 }
-#btnblank:hover{
-    text-decoration:none;
-}
+#btnDocument{left:600px;}
+#btnModerator{left:780px;}
+#btnWebviewer{left:960px;}
+#btnSystem{left:1120px;}
+#btnDownload{left:1300px;}
 .downloadbutton{
-	background-color:rgb(100,100,100);
+	background-color:rgb(66,66,66);
 	color:White;
 	border:solid 2px white;
 	border-radius:18px;
@@ -56,7 +78,10 @@ margin: 0;
 	font-size:28px;
 	font-family:Calibri;
 	font-weight:bold;
+    position:absolute;
+    top:20px;
 }
+
 .downloadbutton:hover{
 	color:black;
 	border-color:black;
@@ -71,6 +96,21 @@ q{
 	font-size:36px;
 	font-family:verdana;
 	font-style:italic;
+}
+.steptext{
+    color:white;
+    font-size:36px;
+    top:540px;
+    position:absolute;
+}
+#step1txt{
+    left:500px;
+}
+#step2txt{
+    left:845px;
+}
+#step3txt{
+    left:1190px;
 }
 	
 	
