@@ -19,6 +19,13 @@ text-align:left;
 max-width:400px;
 padding-left:100px;
 }
+#sbutton{
+	padding: 10px;
+	color:white;
+	background-color:rgb(26,140,255);
+	border:none;
+	border-radius: 5px;
+}
 .form-signin {
 padding: 30px;
 margin: 0 auto;
@@ -78,7 +85,7 @@ max-width: 330px;
 padding: 15px;
       
 margin: 0 auto;
-    
+
 }
     
 .form-signin1 .form-signin1-heading,
@@ -111,7 +118,8 @@ padding: 10px;
 -moz-box-sizing: border-box;
               
 box-sizing: border-box;
-    
+
+border-radius: 10px;
 }
     
 .form-signin1 .form-control:focus {
