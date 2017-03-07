@@ -11,12 +11,12 @@ font-size:60px;
 margin-left:20px;
 color:White;
 }
-#sshortdescription{
+.sshortdescription{
 color:white;
 font-size:48px;
 text-align:left;
 max-width:400px;
-padding-left:100px;
+padding-left:50px;
 }
 .form-signin {
 padding: 30px;

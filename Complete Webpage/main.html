@@ -6,7 +6,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Blank App Designer Packaged Web App Project Template</title>
+        <title>RecoMedia</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
        
@@ -18,28 +18,31 @@
             /* following three (cascaded) are equivalent to above three meta viewport statements */
             /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
             /* see http://dev.w3.org/csswg/css-device-adapt/ */
-                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
-                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
-                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+            @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+            /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
         </style>
         <link rel="stylesheet" href="main.css">
     </head>
 
     <body>
         <form class="form-signin" method="post" class="menulayout">
-            <span id="srecomedia"><span id="sreco">Reco</span>Media</span>
+            <span id="srecomedia" onclick="fbackhome()"><span id="sreco">Reco</span>Media</span>
             <input class="menubutton"  style="margin-left:250px" name="btnDocument" id="btnDocument" type="button" value="DOCUMENT"  float="left"/>
             <input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="MODERATOR" onclick="flogin()"/>
 	        <input class="menubutton" name="btnWebviewer" id="btnWebviewer" type="button" value="WEBVIEWER" />
             <input class="menubutton" style="margin-left:-15px" name="btnSystem" id="btnSystem" type="button" value="SYSTEM" />
 	        <input class="downloadbutton" name="btnDownload" id="btnDownload" type="button" value="DOWNLOAD"/>
         </form>
-        &nbsp&nbsp <q>Screen sharing has never been easier! </q><br><br><br>
-        <p id="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
+        <p class="sshortdescription">Screen sharing has never been easier! </p><br><br>
+        <p class="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
         
         <script>
             function flogin() {
                location.href="Login.html";
+            }
+            function fbackhome(){
+                location.href="main.html";
             }
         </script>
     </body>
