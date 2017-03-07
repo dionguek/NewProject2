@@ -42,6 +42,9 @@ margin: 0 auto;
 .menubutton:hover{
 	text-decoration:underline;
 }
+#btnblank:hover{
+    text-decoration:none;
+}
 .downloadbutton{
 	background-color:rgb(100,100,100);
 	color:White;
