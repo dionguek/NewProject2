@@ -26,14 +26,15 @@
     </head>
 
     <body>
-        <form class="form-signin" method="post" class="menulayout">
-            <img id="logo" src="picture/recomedia-logo.png" alt="Recomedia" onclick="fbackhome()">
-            <input class="menubutton" name="btnDocument" id="btnDocument" type="button" value="DOCUMENT"/>
-            <input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="MODERATOR" onclick="flogin()"/>
-	        <input class="menubutton" name="btnWebviewer" id="btnWebviewer" type="button" value="WEBVIEWER" />
-            <input class="menubutton" name="btnSystem" id="btnSystem" type="button" value="SYSTEM" />
-	        <input class="downloadbutton" name="btnDownload" id="btnDownload" type="button" value="DOWNLOAD"/>
-        </form>
+        <ul>
+            <li><img id="logo" src="picture/recomedia-logo.png" alt="Recomedia" onclick="fbackhome()"></li>
+            <li style="float:right"><a href="#" id="btnDownload">DOWNLOAD</a></li>        
+            <li style="float:right"><a href="#" id="btnSystem">SYSTEM</a></li>        
+            <li style="float:right"><a href="#" id="btnWebviewer">WEBVIEWER</a></li>
+            <li style="float:right"><a href="Login.html" id="btnModerator" onclick="flogin()">MODERATOR</a></li>
+            <li style="float:right"><a href="#" id="btnDocument">DOCUMENT</a></li>
+            <li style="float:right"><a href="#" id="btnHome" class="active">HOME</a></li>
+        </ul>
         <form class="form-signin2" method="post" class="menulayout">
             <p class="sshortdescription">Screen sharing has never been easier! </p>
             <p class="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
@@ -48,7 +49,9 @@
             <span id="step3txt" class="steptext">Step 3 Manage</span>
         <script>
             function flogin() {
-               location.href="Login.html";
+                var myElement = document.querySelector("#btnModerator");
+                myElement.classList.add = "active";
+                location.href="Login.html";
             }
             function fbackhome(){
                 location.href="main.html";
