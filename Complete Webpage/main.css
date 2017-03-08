@@ -92,6 +92,9 @@ a.active {
     .topbutton{
         float:none;
     }
+    #menu{
+        float:right;
+    }
     .graphicsitem{
         float:none;
     }
