@@ -105,7 +105,7 @@ a.active {
 
 .sshortdescription{
     color:white;
-    font-size:40px;
+    font-size:36px;
     text-align:left;
     padding-left:50px;
 }
@@ -116,7 +116,9 @@ a.active {
 }
 .graphicsitem{
     display:block;
-    margin:30px;
+    margin-left:30px;
+    margin-bottom:0px;
+    margin-top:5px;
 }
 .graphicscontainer{
     margin: 0 auto;
