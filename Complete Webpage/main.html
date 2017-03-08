@@ -26,8 +26,8 @@
     </head>
 
     <body class="main">
-        <ul>
-            <li><img id="logo" src="picture/recomedia-logo.png" alt="Recomedia" onclick="fbackhome()"></li>
+        <ul class="topnav">
+            <li id="logo"><img id="logo" src="picture/recomedia-logo.png" alt="Recomedia" onclick="fbackhome()"></li>
             <li class="topbutton"><a href="#" id="btnDownload">DOWNLOAD</a></li>        
             <li class="topbutton"><a href="#" id="btnSystem">SYSTEM</a></li>        
             <li class="topbutton"><a href="#" id="btnWebviewer">WEBVIEWER</a></li>
@@ -35,18 +35,28 @@
             <li class="topbutton"><a href="#" id="btnDocument">DOCUMENT</a></li>
             <li class="topbutton"><a href="#" id="btnHome" class="active">HOME</a></li>
         </ul>
-        <form class="form-signin2" method="post" class="menulayout">
-            <p class="sshortdescription">Screen sharing has never been easier! </p>
-            <p class="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
-        </form>
-        <form class="form-signin3" method="post" class="menulayout">
-            <img id="step1" class="steps" src="Picture/Step1.jpg" alt="Step 1">
-            <img id="step2" class="steps" src="Picture/Step2.jpg" alt="Step 1">
-            <img id="step3" class="steps" src="Picture/Step3.jpg" alt="Step 1">
-        </form>
-            <span id="step1txt" class="steptext">Step 1 Download</span>
-            <span id="step2txt" class="steptext">Step 2 Connect</span>
-            <span id="step3txt" class="steptext">Step 3 Manage</span>
+        <div class="container">
+            <form>
+                <p class="sshortdescription">Screen sharing has never been easier! </p>
+                <p class="sshortdescription">A simple wireless multi-platform screen sharing application.</p>
+            </form>
+            <form class="graphicscontainer">
+                <ul class="graphicsmenu">
+                    <li class="graphicsitem">
+                        <img id="step1" class="steps" src="Picture/Step1.jpg" alt="Step 1">
+                        <p id="step1txt" class="steptext">Step 1 Download<br>RecoMedia Software.</p>
+                    </li>
+                    <li class="graphicsitem">
+                        <img id="step2" class="steps" src="Picture/Step2.jpg" alt="Step 2">
+                        <p id="step2txt" class="steptext">Step 2 Connect<br>to RecoMedia WiFi.</p>
+                    </li>
+                    <li class="graphicsitem">
+                        <img id="step3" class="steps" src="Picture/Step3.jpg" alt="Step 3">
+                        <p id="step3txt" class="steptext">Step 3 Access<br>to RecoMedia Server.</p>
+                    </li>
+                </ul>
+            </form>
+        </div>
         <script>
             function flogin() {
                 var myElement = document.querySelector("#btnModerator");

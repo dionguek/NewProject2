@@ -8,7 +8,7 @@
     width:400px;
     height:60px;
 }
-ul{
+.topnav {
     position:fixed;
     top:0px;
     right:0px;
@@ -17,9 +17,8 @@ ul{
     list-style-type:none;
     margin:0px;
     padding:20px;
-    overflow:hidden;
+    z-index:100;
 }
-
 li a{
     display:block;
     color:rgb(66,66,66);
@@ -46,7 +45,7 @@ a.active {
 }
 
 .login li a{
-display:block;
+    display:block;
     color:rgb(171,204,237);
     text-align:center;
     padding:14px 16px;
@@ -70,6 +69,11 @@ display:block;
     background-color: rgb(171,204,237);
 }
 
+.container{
+    position:relative;
+    right:0px;
+    left:0px;
+}
 @media(min-width:1396px){
     li{
         float:left;
@@ -77,80 +81,75 @@ display:block;
     .topbutton{
         float:right;
     }
+    .container{
+        top:105px;
+    }
+    .graphicscontainer{
+        width:1150px;
+    }
 }
 @media(max-width:1395px){
     .topbutton{
         float:none;
     }
+    .graphicsitem{
+        float:none;
+    }
+    .container{
+        top:485px;
+    }
+    .topnav{
+        position:absolute;    
+    }
 }
 
 .sshortdescription{
-color:white;
-font-size:46px;
-text-align:left;
-max-width:400px;
-padding-left:50px;
+    color:white;
+    font-size:40px;
+    text-align:left;
+    padding-left:50px;
 }
-.form-signin2 {
-position:fixed;
-top:100px;
-right:0px;
-left:0px;
-max-width: 400px;
-padding: 30px;  
-margin: 0;
+.graphicsmenu{
+    list-style-type:none;
+    margin:0px;
+    text-align:center;
 }
-.form-signin3{
-    top:140px;
-    left:450px;
-    width:1000px;
-    height:320px;
-    padding-top:50px;
-    position:relative;
+.graphicsitem{
+    display:block;
+    margin:30px;
+}
+.graphicscontainer{
+    margin: 0 auto;
 }
 .steps{
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
     margin:15px;
 }
 .steptext{
     color:white;
     font-size:36px;
-    top:540px;
-    position:absolute;
 }
-#step1txt{
-    left:500px;
-}
-#step2txt{
-    left:845px;
-}
-#step3txt{
-    left:1190px;
-}
-	
 .form-signin1 {
-    max-width: 330px;  
-    padding: 15px;  
+    width: 200px;  
+    padding: 100px;  
     margin: 0 auto;
 }
-    
 .form-signin1 .form-signin1-heading,   
 .form-signin1 .checkbox 
 {  
     margin-bottom: 10px;
 }
-    
 .form-signin1 .checkbox {  
     font-weight: normal;
 }
     
-.form-signin1 .form-control {  
+.form-signin1 .form-control { 
+    width:100%;
     margin:0 auto;
-    align:center;
     font-size: 16px;  
     height: auto;  
-    padding: 10px;  
+    padding: 15px;  
     -webkit-box-sizing: border-box;     
     -moz-box-sizing: border-box;          
     box-sizing: border-box;
@@ -176,6 +175,7 @@ margin: 0;
     color:white;
 }
 #sbutton{
+    width:100%;
 	padding: 10px;
 	color:white;
 	background-color:rgb(26,140,255);
