@@ -1,5 +1,8 @@
-body{
-background-color:rgb(66,66,66);
+.main{
+    background-color:rgb(66,66,66);
+}
+.login{
+    background-color:rgb(171,204,237);
 }
 #logo{
     width:400px;
@@ -16,9 +19,7 @@ ul{
     padding:20px;
     overflow:hidden;
 }
-li{
-    float:left;
-}
+
 li a{
     display:block;
     color:rgb(66,66,66);
@@ -44,16 +45,55 @@ a.active {
     background-color: rgb(66,66,66);
 }
 
+.login li a{
+display:block;
+    color:rgb(171,204,237);
+    text-align:center;
+    padding:14px 16px;
+    border-color:white;
+    font-size:28px;
+    font-family:Calibri;
+    font-weight:bold;
+    border:none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.login a:hover{
+    background-color: darkblue;
+}
+.login a:active {
+    color: white;
+    background-color: rgb(171,204,237);
+}
+.login a.active {
+    color: white;
+    background-color: rgb(171,204,237);
+}
+
+@media(min-width:1396px){
+    li{
+        float:left;
+    }
+    .topbutton{
+        float:right;
+    }
+}
+@media(max-width:1395px){
+    .topbutton{
+        float:none;
+    }
+}
+
 .sshortdescription{
 color:white;
-font-size:48px;
+font-size:46px;
 text-align:left;
 max-width:400px;
 padding-left:50px;
 }
 .form-signin2 {
-position:absolute;
-top:140px;
+position:fixed;
+top:100px;
 right:0px;
 left:0px;
 max-width: 400px;
@@ -89,4 +129,56 @@ margin: 0;
     left:1190px;
 }
 	
-	
+.form-signin1 {
+    max-width: 330px;  
+    padding: 15px;  
+    margin: 0 auto;
+}
+    
+.form-signin1 .form-signin1-heading,   
+.form-signin1 .checkbox 
+{  
+    margin-bottom: 10px;
+}
+    
+.form-signin1 .checkbox {  
+    font-weight: normal;
+}
+    
+.form-signin1 .form-control {  
+    margin:0 auto;
+    align:center;
+    font-size: 16px;  
+    height: auto;  
+    padding: 10px;  
+    -webkit-box-sizing: border-box;     
+    -moz-box-sizing: border-box;          
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+    
+.form-signin1 .form-control:focus {  
+    z-index: 2;
+}
+    
+.form-signin1 input[type="text"] {  
+    margin-bottom: -1px;  
+    border-bottom-left-radius: 0;  
+    border-bottom-right-radius: 0;
+}
+    
+.form-signin1 input[type="password"] {  
+    margin-bottom: 10px;  
+    border-top-left-radius: 0;  
+    border-top-right-radius: 0;
+}
+.form-signin1-heading{
+    color:white;
+}
+#sbutton{
+	padding: 10px;
+	color:white;
+	background-color:rgb(26,140,255);
+	border:none;
+	border-radius: 5px;
+}

@@ -19,18 +19,19 @@
         /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
     </style>
     <!--<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">-->
-    <link href="Login.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
   </head>
 
-  <body>
-      <form class="form-signin" method="post" class="menulayout">
-            <img src="picture/recomedia-logo.png" alt="Recomedia" style="width:400px;height:60px;" onclick="fbackhome()">
-            <input class="menubutton" name="btnDocument" id="btnDocument" type="button" value="DOCUMENT"/>
-            <input class="menubutton" name="btnModerator" id="btnModerator" type="button" value="MODERATOR" onclick="flogin()"/>
-	        <input class="menubutton" name="btnWebviewer" id="btnWebviewer" type="button" value="WEBVIEWER" />
-            <input class="menubutton" name="btnSystem" id="btnSystem" type="button" value="SYSTEM" />
-	        <input class="downloadbutton" name="btnDownload" id="btnDownload" type="button" value="DOWNLOAD"/>
-        </form>
+  <body class="login">
+	<ul>
+        <li><img id="logo" src="picture/recomedia-logo.png" alt="Recomedia" onclick="fbackhome()"></li>
+		<li class="topbutton"><a href="#" id="btnDownload">DOWNLOAD</a></li>        
+        <li class="topbutton"><a href="#" id="btnSystem">SYSTEM</a></li>        
+        <li class="topbutton"><a href="#" id="btnWebviewer">WEBVIEWER</a></li>
+        <li class="topbutton"><a href="#" id="btnModerator" class="active">MODERATOR</a></li>
+        <li class="topbutton"><a href="#" id="btnDocument">DOCUMENT</a></li>
+        <li class="topbutton"><a href="#" id="btnHome" onclick="fbackhome()">HOME</a></li>
+    </ul>
     <div class="form-signin2">
       <form class="form-signin1">
         <h2 id="status" class="form-signin1-heading"></h2>
