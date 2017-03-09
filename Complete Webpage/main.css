@@ -20,6 +20,15 @@
     width:400px;
     height:60px;
 }
+#menu{
+    float:right;
+}
+.menubut {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
 .topnav {
     position:fixed;
     top:0px;
@@ -74,19 +83,31 @@ a.active {
     .home .graphicscontainer{
         width:1300px;
     }
+    #menu{
+        display:none;
+    }
 }
-@media(max-width:1395px){
+@media(max-width:1396px){
     .topbutton{
         float:none;
+        display:none;
+    }
+    #menu{
+        display:block;
     }
     .home .graphicsitem{
         float: none;
     }
     .txtcontainer{
-        top:485px;
+        top:105px;
     }
     .topnav{
         position:absolute;    
+    }
+}
+@media(max-width:524px){
+    #logo{
+        display:none;
     }
 }
 

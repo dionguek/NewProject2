@@ -24,7 +24,8 @@
 
   <body class="login">
         <ul class="topnav">
-            <li id="logo"><img id="logo" src="picture/recomedia-logo.png" alt="Recomedia" onclick="fbackhome()"></li>
+            <li id="menu"><a onclick="fmenu()"><div class="menubut"></div><div class="menubut"></div><div class="menubut"></div></a></li>
+            <li id="logo"><img id="logo" src="picture/recomedia-logo.png" alt="Recomedia"></li>
             <li class="topbutton"><a href="#" id="btnDownload" onclick="fdownload()">DOWNLOAD</a></li>        
             <li class="topbutton"><a href="#" id="btnSystem" onclick="fsystems()">SYSTEM</a></li>        
             <li class="topbutton"><a href="#" id="btnWebviewer" onclick="fwebviewer()">WEBVIEWER</a></li>
@@ -51,6 +52,8 @@
 
 
         <script>
+            window.addEventListener("resize", fresize);
+            
             function flogin() {
                 location.href="Login.html";
             }
@@ -68,6 +71,42 @@
             }
             function fdownload(){
                 location.href="download.html";
+            }
+            function fmenu(){
+                var myElement = document.getElementsByClassName("topbutton");
+                var menuE = document.getElementById("menu");
+                var txtcontainerE = document.getElementsByClassName("txtcontainer");
+                if(myElement[0].style.display=="none")
+                {
+                    for(var x= 0; x<6 ; x++){
+                        myElement[x].style.display="block";
+                        txtcontainerE[0].style.top = "485px";
+                    }   
+                }
+                else{
+                     for(var x= 0; x<6 ; x++){
+                        myElement[x].style.display="none";
+                        txtcontainerE[0].style.top = "105px";
+                     }   
+                }
+            }
+            function fresize(){
+                var myElement = document.getElementsByClassName("topbutton");
+                var menuE = document.getElementById("menu");
+                var screenWidth = window.innerWidth;
+                console.log(screenWidth);
+                if(screenWidth > 1396){
+                    for(var x= 0; x<6 ; x++){
+                        myElement[x].style.display="block";
+                    } 
+                    menuE.style.display="none";
+                }
+                else if(screenWidth > 524){
+                    for(var x= 0; x<6 ; x++){
+                        myElement[x].style.display="none";
+                     }
+                    menuE.style.display="block";
+                }
             }
         </script>
   </body>
