@@ -1,8 +1,20 @@
 .home{
     background-color:rgb(66,66,66);
 }
+.document{
+    background-color:rgb(104,81,53);
+}
 .login{
-    background-color:rgb(171,204,237);
+    background-color:rgb(142,96,40);
+}
+.webviewer{
+    background-color:rgb(179,110,26);
+}
+.systems{
+    background-color:rgb(217,125,13);
+}
+.download{
+    background-color:rgb(255,140,0);
 }
 #logo{
     width:400px;
@@ -19,54 +31,31 @@
     padding:20px;
     z-index:100;
 }
-.home li a{
+li a{
     display:block;
-    color:rgb(66,66,66);
     text-align:center;
     padding:14px 16px;
-    border-color:white;
     font-size:28px;
-    font-family:Calibri;
+    border-color:white;
+    font-family:calibri;
     font-weight:bold;
     border:none;
-    text-decoration: none;
+    text-decoration :none;
     border-radius: 5px;
 }
-.home a:hover{
+li a{
+    color:rgb(66,66,66);
+}
+a:hover{
     background-color: #ddd;
 }
-.home a:active {
+a:active {
     color: white;
     background-color: rgb(66,66,66);
 }
-.home a.active {
+a.active {
     color: white;
     background-color: rgb(66,66,66);
-}
-
-.login li a{
-    display:block;
-    color:rgb(171,204,237);
-    text-align:center;
-    padding:14px 16px;
-    border-color:white;
-    font-size:28px;
-    font-family:Calibri;
-    font-weight:bold;
-    border:none;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.login a:hover{
-    background-color: darkblue;
-}
-.login a:active {
-    color: white;
-    background-color: rgb(171,204,237);
-}
-.login a.active {
-    color: white;
-    background-color: rgb(171,204,237);
 }
 
 .txtcontainer{
@@ -181,7 +170,8 @@
     width:100%;
 	padding: 10px;
 	color:white;
-	background-color:rgb(26,140,255);
+    font-size:16px;
+	background-color:rgb(255,158,0);
 	border:none;
 	border-radius: 5px;
 }

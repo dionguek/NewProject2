@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>RecoMedia</title>
+    <title>Moderator</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
        
@@ -23,15 +23,15 @@
   </head>
 
   <body class="login">
-	<ul class="topnav">
-        <li><img id="logo" src="picture/recomedia-logo.png" alt="Recomedia" onclick="fbackhome()"></li>
-		<li class="topbutton"><a href="#" id="btnDownload">DOWNLOAD</a></li>  
-        <li class="topbutton"><a href="#" id="btnSystem">SYSTEM</a></li>      
-        <li class="topbutton"><a href="#" id="btnWebviewer">WEBVIEWER</a></li>
-        <li class="topbutton"><a href="#" id="btnModerator" class="active">MODERATOR</a></li>
-        <li class="topbutton"><a href="#" id="btnDocument">DOCUMENT</a></li>
-        <li class="topbutton"><a href="#" id="btnHome" onclick="fbackhome()">HOME</a></li>
-    </ul>
+        <ul class="topnav">
+            <li id="logo"><img id="logo" src="picture/recomedia-logo.png" alt="Recomedia" onclick="fbackhome()"></li>
+            <li class="topbutton"><a href="#" id="btnDownload" onclick="fdownload()">DOWNLOAD</a></li>        
+            <li class="topbutton"><a href="#" id="btnSystem" onclick="fsystems()">SYSTEM</a></li>        
+            <li class="topbutton"><a href="#" id="btnWebviewer" onclick="fwebviewer()">WEBVIEWER</a></li>
+            <li class="topbutton"><a href="#" id="btnModerator" class="active">MODERATOR</a></li>
+            <li class="topbutton"><a href="#" id="btnDocument" onclick="fdocument()">DOCUMENT</a></li>
+            <li class="topbutton"><a href="#" id="btnHome" onclick="fbackhome()">HOME</a></li>
+        </ul>
     <div class="txtcontainer">
       <form class="form-signin1">
         <h2 id="status" class="form-signin1-heading"></h2>
@@ -50,13 +50,25 @@
     </div> <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script>
-        function fbackhome(){
-            location.href="main.html";
-        }
-    </script>
+        <script>
+            function flogin() {
+                location.href="Login.html";
+            }
+            function fbackhome(){
+                location.href="main.html";
+            }
+            function fdocument(){
+                location.href="document.html";
+            }
+            function fwebviewer(){
+                location.href="webviewer.html";
+            }
+            function fsystems(){
+                location.href="systems.html";
+            }
+            function fdownload(){
+                location.href="download.html";
+            }
+        </script>
   </body>
 </html>
