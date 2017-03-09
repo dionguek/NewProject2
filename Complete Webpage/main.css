@@ -70,7 +70,7 @@ a.active {
     right:0px;
     left:0px;
 }
-@media(min-width:1396px){
+@media(min-width:1410px){
     li{
         float:left;
     }
@@ -87,7 +87,7 @@ a.active {
         display:none;
     }
 }
-@media(max-width:1396px){
+@media(max-width:1410px){
     .topbutton{
         float:none;
         display:none;
