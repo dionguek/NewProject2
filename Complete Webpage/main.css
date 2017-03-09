@@ -42,8 +42,6 @@ li a{
     border:none;
     text-decoration :none;
     border-radius: 5px;
-}
-li a{
     color:rgb(66,66,66);
 }
 a:hover{
@@ -82,7 +80,7 @@ a.active {
         float:none;
     }
     .home .graphicsitem{
-        float:none;
+        float: none;
     }
     .txtcontainer{
         top:485px;
