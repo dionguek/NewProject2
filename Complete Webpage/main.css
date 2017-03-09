@@ -1,4 +1,4 @@
-.main{
+.home{
     background-color:rgb(66,66,66);
 }
 .login{
@@ -19,7 +19,7 @@
     padding:20px;
     z-index:100;
 }
-li a{
+.home li a{
     display:block;
     color:rgb(66,66,66);
     text-align:center;
@@ -32,14 +32,14 @@ li a{
     text-decoration: none;
     border-radius: 5px;
 }
-a:hover{
+.home a:hover{
     background-color: #ddd;
 }
-a:active {
+.home a:active {
     color: white;
     background-color: rgb(66,66,66);
 }
-a.active {
+.home a.active {
     color: white;
     background-color: rgb(66,66,66);
 }
@@ -69,7 +69,7 @@ a.active {
     background-color: rgb(171,204,237);
 }
 
-.container{
+.txtcontainer{
     position:relative;
     right:0px;
     left:0px;
@@ -81,24 +81,21 @@ a.active {
     .topbutton{
         float:right;
     }
-    .container{
+    .txtcontainer{
         top:105px;
     }
-    .graphicscontainer{
-        width:1150px;
+    .home .graphicscontainer{
+        width:1300px;
     }
 }
 @media(max-width:1395px){
     .topbutton{
         float:none;
     }
-    #menu{
-        float:right;
-    }
-    .graphicsitem{
+    .home .graphicsitem{
         float:none;
     }
-    .container{
+    .txtcontainer{
         top:485px;
     }
     .topnav{
@@ -106,50 +103,51 @@ a.active {
     }
 }
 
-.sshortdescription{
+.home .sshortdescription{
     color:white;
     font-size:36px;
     text-align:left;
     padding-left:50px;
 }
-.graphicsmenu{
+.home .graphicsmenu{
     list-style-type:none;
     margin:0px;
     text-align:center;
 }
-.graphicsitem{
+.home .graphicsitem{
     display:block;
-    margin-left:30px;
-    margin-bottom:0px;
-    margin-top:5px;
+    margin:0;
 }
-.graphicscontainer{
+.home .graphicscontainer{
     margin: 0 auto;
 }
-.steps{
-    width:250px;
-    height:250px;
-    margin:15px;
+.home .steps{
+    width:330px;
+    height:330px;
+    margin:0 45px;
 }
-.steptext{
+.home .steptext{
     color:white;
-    font-size:36px;
+    font-size:18px;
 }
-.form-signin1 {
+.home .stepwd{
+    font-size:40px;
+}
+.login .form-signin1 {
     width: 200px;  
     padding: 100px;  
     margin: 0 auto;
 }
-.form-signin1 .form-signin1-heading,   
-.form-signin1 .checkbox 
+.login .form-signin1 .form-signin1-heading,   
+.login .form-signin1 .checkbox 
 {  
     margin-bottom: 10px;
 }
-.form-signin1 .checkbox {  
+.login .form-signin1 .checkbox {  
     font-weight: normal;
 }
     
-.form-signin1 .form-control { 
+.login .form-signin1 .form-control { 
     width:100%;
     margin:0 auto;
     font-size: 16px;  
@@ -161,25 +159,25 @@ a.active {
     border-radius: 10px;
 }
     
-.form-signin1 .form-control:focus {  
+.login .form-signin1 .form-control:focus {  
     z-index: 2;
 }
     
-.form-signin1 input[type="text"] {  
+.login .form-signin1 input[type="text"] {  
     margin-bottom: -1px;  
     border-bottom-left-radius: 0;  
     border-bottom-right-radius: 0;
 }
     
-.form-signin1 input[type="password"] {  
+.login .form-signin1 input[type="password"] {  
     margin-bottom: 10px;  
     border-top-left-radius: 0;  
     border-top-right-radius: 0;
 }
-.form-signin1-heading{
+.login .form-signin1-heading{
     color:white;
 }
-#sbutton{
+.login #sbutton{
     width:100%;
 	padding: 10px;
 	color:white;
